@@ -47,27 +47,27 @@
     <b-modal id="modal-1" :title="modalTitle" hide-footer>
       <b-form @submit.prevent="onSubmit">
         <b-form-group label-cols-sm="3" label="Name" label-for="nested-name">
-          <b-form-input id="nested-name" v-model="form.name"></b-form-input>
+          <b-form-input id="nested-name" v-model="form.name" required></b-form-input>
         </b-form-group>
 
         <b-form-group label-cols-sm="3" label="Sex" label-for="nested-sex">
-          <b-form-select v-model="form.sex" :options="sexOptions" id="nested-sex"></b-form-select>
+          <b-form-select v-model="form.sex" :options="sexOptions" id="nested-sex" required></b-form-select>
         </b-form-group>
 
         <b-form-group label-cols-sm="3" label="Religion" label-for="nested-religion">
-          <b-form-select v-model="form.religion" :options="religionOptions" id="nested-religion"></b-form-select>
+          <b-form-select v-model="form.religion" :options="religionOptions" id="nested-religion" required></b-form-select>
         </b-form-group>
 
         <b-form-group label-cols-sm="3" label="Phone" label-for="nested-phone">
-          <b-form-input id="nested-phone" v-model="form.phone"></b-form-input>
+          <b-form-input id="nested-phone" v-model="form.phone" required></b-form-input>
         </b-form-group>
 
         <b-form-group label-cols-sm="3" label="Address" label-for="nested-address">
-          <b-form-input id="nested-address" v-model="form.address"></b-form-input>
+          <b-form-input id="nested-address" v-model="form.address" required></b-form-input>
         </b-form-group>
 
         <b-form-group label-cols-sm="3" label="NIK" label-for="nested-nik">
-          <b-form-input id="nested-nik" v-model="form.nik"></b-form-input>
+          <b-form-input id="nested-nik" v-model="form.nik" required></b-form-input>
         </b-form-group>
 
         <b-button type="submit" variant="primary" v-show="!isUpdate" class="submit-btn">Submit</b-button>
